@@ -7,22 +7,19 @@ public class Task5 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Input N1: ");
-        int n1 = scanner.nextInt();
+        int rows = scanner.nextInt();
         System.out.println("Input N2: ");
-        int n2 = scanner.nextInt();
+        int columns = scanner.nextInt();
         int k = 0;
-        int[][] twoDim = new int[n1][n2];
-        for (int i = 0; i < n1; i++) {
-
-            for (int j = 0; j < n2; j++) {
+        int[][] twoDim = new int[rows][columns];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
 
                 twoDim[i][j] = k;
                 k++;
 
                 if (twoDim[i][j] % 2 == 0) {
-
                     System.out.print("0");
-
                 } else {
                     System.out.print("1");
                 }
@@ -30,6 +27,5 @@ public class Task5 {
             System.out.println();
         }
     }
-
 }
 

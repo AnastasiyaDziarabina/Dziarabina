@@ -15,25 +15,21 @@ public class Task6 {
 
             int size = 1 + (int) (Math.random() * 8);
             gearArray[i] = new int[size];
-        }
+            }
 
         for (int i = 0; i < gearArray.length; i++) {
             for (int j = 0; j < gearArray[i].length; j++) {
-                int bound = 0;
-                num = random.nextInt();
+                num = random.nextInt( 5);
                 gearArray[i][j] = num;
             }
 
         }
 
-        for (int i = 0; i < gearArray.length; i++) ;
-        {
-            int i = 0;
-            for (int j = 0; j < gearArray[i].length; j++) System.out.print(gearArray[i][j] + " ");
+        for (int i = 0; i < gearArray.length; i++) {
+            for (int j = 0; j < gearArray[i].length; j++) {
+                System.out.println(gearArray[i][j] + " ");
+            }
             System.out.println();
-
         }
-
     }
-
 }
