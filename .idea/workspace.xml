@@ -2,13 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="150e12b5-2328-4a2f-a6bd-435603327c70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework2" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework2/.idea/Homework2.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework2/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework2/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework2/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework2/Task1a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2/Task1a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework2/Task1b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2/Task1b.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework2/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework2/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2/Task3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework2/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2/Task4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework2/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2/Task5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework2/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2/Task6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework2/Task7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2/Task7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +33,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/Homework2" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
