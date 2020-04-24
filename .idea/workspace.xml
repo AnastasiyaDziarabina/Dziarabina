@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="150e12b5-2328-4a2f-a6bd-435603327c70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework2" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework2/.idea/Homework2.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework2/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework2/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework2/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework2/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Homework2/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework2/Task6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task1a.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task1b.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task7.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
