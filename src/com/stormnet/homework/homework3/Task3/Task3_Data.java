@@ -1,107 +1,93 @@
+package com.stormnet.homework.homework3.Task3;
+
+
+
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.Date;
 
 public class Task3_Data {
 
-    private String CustomerName;
-    private String MapView;
-    private String CardNumber;
-    private String CVV;
-    private String Validity;
 
-    List<String> Clients = new ArrayList<String>();
-    List<String> data = new ArrayList<String>();
-    int c = 0;
-    static Scanner scanner = new Scanner(System.in);
+    private String cardNumber;
+    private String typeCard;
+    private String customerName;
+    private Date term ;
+    private String cvv;
 
-    public void setCustomerName() {
-        System.out.println("Введите имя клиента:");
-        if (scanner.hasNext()) {
-            String temp = scanner.nextLine();
-            int b = temp.length();
-            if (b > 1) {
-                this.CustomerName = temp;
-                System.out.println("*************************");
-            } else {
-                setCustomerName();
+
+
+    public Task3_Data(String cardNumber, String typeCard, String customerName, Date term, String cvv) {
+        this.cardNumber = cardNumber;
+        this.typeCard = typeCard;
+        this.customerName = customerName;
+        this.term = term;
+        this.cvv = cvv;
+    }
+
+    public String getCardNumber() {
+        return cardNumber;
+    }
+
+    public void setCardNumber(String cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
+    public String getTypeCard() {
+        return typeCard;
+    }
+
+    public void setTypeCard(String typeCard) {
+        this.typeCard = typeCard;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public Date getTerm() {
+        return term;
+    }
+
+    public void setTerm(Date term) {
+        this.term = term;
+    }
+
+    public String getCvv() {
+        return cvv;
+    }
+
+    public void setCvv(String cvv) {
+        this.cvv = cvv;
+    }
+
+    static class Validator{
+        static void validationCard(ArrayList <Task3_Data> card, Task3_Data objectCard){
+
+
+        Date date = new Date();
+
+
+
+
+            if (objectCard.getCardNumber().replaceAll(" ","").length() < 16 ){
+                System.out.println("Card number should consist of 16 digits");
             }
-        }
-    }
-
-    public void setMapView() {
-        System.out.println("Выберете вид карты:\n 1-Debit card \n 2-" +
-                "Credit card \n 3-Prepaid card");
-        char operation;
-        if (scanner.hasNext()) {
-            operation = scanner.next().charAt(0);
-            switch (operation) {
-                case '1':
-                    this.MapView = "Debit";
-                    break;
-                case '2':
-                    this.MapView = "Credit";
-                    break;
-                case '3':
-                    this.MapView = "Prepaid";
-                    break;
-                default:
-                    System.out.println("Операция не распознана. Повторите ввод.");
-                    setMapView();
+            if (objectCard.getTypeCard() != "Credit" && objectCard.getTypeCard() != "Debit"){
+                System.out.println("Card type can only be Debit or Credit");
             }
-            System.out.println("*************************");
-        }
-    }
-
-    public void setCardNumber() {
-        System.out.println("Введите номер карты:");
-        if (scanner.hasNext()) {
-            String temp = scanner.nextLine();
-            int len = temp.length();
-            if (len == 16) {
-                this.CardNumber = temp;
-                System.out.println("*************************");
-            } else {
-                System.out.println("Неверный номер карты \n *************************");
-                setCardNumber();
+            if (objectCard.getCustomerName().length() < 1){
+                System.out.println("Name should contains at least 1 symbol");
             }
-        }
-    }
-
-    public void setСVV() {
-        System.out.println("Введите CVV:");
-        String temp = scanner.nextLine();
-        if (temp.length() == 3) {
-            this.CVV = temp;
-        } else {
-            System.out.println("Неверный CVV \n *************************");
-            setСVV();
-        }
-    }
-
-    public void getValidity() {
-
-        System.out.println("Введите срок действия карты:");
-        if (scanner.hasNext()) {
-            this.Validity = scanner.nextLine();
-            int len = Validity.length();
-            if (len == 5) {
-                System.out.println("*************************");
-            } else {
-                getValidity();
+            if (objectCard.getTerm().before(date)){
+                System.out.println("Card expired");
             }
-        }
+            if (objectCard.getCvv().length() < 3) {
+                System.out.println("CVV should consist of 3 digits");
+            }
     }
-
-    public List<String> getCart() {
-
-        Clients.add(0, CustomerName);
-        Clients.add(1, MapView);
-        Clients.add(2, CardNumber);
-        Clients.add(3, CVV);
-        Clients.add(4, Validity);
-
-        return Clients;
-    }
-
+}
 }

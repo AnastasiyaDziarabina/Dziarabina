@@ -1,27 +1,21 @@
+package com.stormnet.homework.homework3.Task3;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Task3_Main {
-    private static Task3_Data Data = new Task3_Data();
+    public static void main(String[] args) throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
 
-    public static void main(String[] args) {
-        Data.setCustomerName();
-        Data.setCardNumber();
-        Data.setСVV();
-        Data.getValidity();
-        Data.setMapView();
-        Cart(get());
-    }
+        Task3_Data card = new Task3_Data("1111 1111 1111 1116", "Debit", "IvanIvanov", sdf.parse("26.04.2020"), "123");
 
-    public static ArrayList<String> get() {
-        return (ArrayList<String>) Data.getCart();
+        ArrayList<Task3_Data> cardList = new ArrayList();
+        cardList.add(new Task3_Data("1111111111111116", "Credit", "IvanIvanov", sdf.parse("20.05.2021"), "123"));
+        cardList.add(new Task3_Data("1111111111111117", "Debit", "PetrPetrov", sdf.parse("15.07.2020"), "456"));
+        cardList.add(new Task3_Data("1111111111111118", "Credit", "SemenSidorov", sdf.parse("10.02.2020"), "777"));
+        cardList.add(new Task3_Data("1111111111111119", "Debit", "AlenaSmirnova", sdf.parse("29.09.2022"), "666"));
 
-    }
-
-    public static void Cart(List Data) {
-
-        System.out.println("Имя- " + Data.get(0) + "\tВид карты- " + Data.get(1)
-                + "\tНомер карты- " + Data.get(2) + "\tCVV- " + Data.get(3)
-                + "\tСрок действия- " + Data.get(4));
+        Task3_Data.Validator.validationCard(cardList, card);
     }
 }
