@@ -7,14 +7,11 @@ import java.util.Date;
 
 public class Task3_Data {
 
-
     private String cardNumber;
     private String typeCard;
     private String customerName;
     private Date term ;
     private String cvv;
-
-
 
     public Task3_Data(String cardNumber, String typeCard, String customerName, Date term, String cvv) {
         this.cardNumber = cardNumber;
@@ -67,11 +64,7 @@ public class Task3_Data {
     static class Validator{
         static void validationCard(ArrayList <Task3_Data> card, Task3_Data objectCard){
 
-
         Date date = new Date();
-
-
-
 
             if (objectCard.getCardNumber().replaceAll(" ","").length() < 16 ){
                 System.out.println("Card number should consist of 16 digits");

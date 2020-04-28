@@ -12,5 +12,4 @@ public class Main {
 
         Student.printStudents(studentList, 1);
     }
-
 }
