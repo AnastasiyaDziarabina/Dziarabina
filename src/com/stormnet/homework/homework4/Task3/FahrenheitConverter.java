@@ -13,7 +13,7 @@ public class FahrenheitConverter implements Converter {
         System.out.println("Enter degrees of temperature to convert to Fahrenheit: ");
         temperature = scanner.nextDouble();
 
-        System.out.println("Enter the temperature type in the following format: C or K");
+        System.out.println("Enter the temperature type in the following format: K ");
         type = scanner.next().trim().charAt(0);
     }
 
@@ -22,14 +22,10 @@ public class FahrenheitConverter implements Converter {
 
         input();
 
-        if (type == 'C') {
-            double resultConvert = temperature * 1.8 + 32;
-            System.out.println("Fahrenheit temperature is " + resultConvert);
-        }
         if (type == 'K') {
             double resultConvert = 1.8 * (temperature - 273) + 32;
             System.out.println("Fahrenheit temperature is " + resultConvert);
-        } else if (type != 'C' && type != 'K') {
+        } else if (type != 'K') {
             System.out.println("Unknown type!");
         }
     }

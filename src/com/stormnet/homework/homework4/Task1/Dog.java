@@ -27,10 +27,4 @@ public class Dog extends Animal {
     public void go() {
         System.out.println("Dog goes wherever it wants");
     }
-
-    @Override
-    public void eat(Animal animal) {
-        System.out.printf("Dog can eat any %s it wants",animal.getBreed());
-        System.out.println();
-    }
 }

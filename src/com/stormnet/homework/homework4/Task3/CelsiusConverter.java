@@ -12,7 +12,7 @@ public class CelsiusConverter implements Converter {
         System.out.println("Enter degrees of temperature to convert to Celsius: ");
         temperature = scanner.nextDouble();
 
-        System.out.println("Enter the temperature type in the following format: F or K");
+        System.out.println("Enter the temperature type in the following format: F ");
         type = scanner.next().trim().charAt(0);
     }
 
@@ -24,11 +24,7 @@ public class CelsiusConverter implements Converter {
         if (type == 'F') {
             double resultConvert = (temperature - 32) / 1.8;
             System.out.println("Celsius temperature is " + resultConvert);
-        }
-        if (type == 'K') {
-            double resultConvert = temperature - 273.15;
-            System.out.println("Celsius temperature is " + resultConvert);
-        } else if (type != 'F' && type != 'K') {
+        } else if (type != 'F') {
             System.out.println("Unknown type!");
         }
     }
