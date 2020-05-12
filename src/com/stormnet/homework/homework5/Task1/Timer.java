@@ -13,7 +13,6 @@ public class Timer {
         while (true) {
             try {
                 Thread.sleep(10 * 1000);
-                System.out.println("10 second has passed!");
                 inspector.execute();
             } catch (InterruptedException e) {
                 e.printStackTrace();
