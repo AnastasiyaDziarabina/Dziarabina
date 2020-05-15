@@ -16,5 +16,4 @@ public class Buyer {
     public Buyer() {
         this.shoppingList = shoppingList;
     }
-
 }

@@ -30,6 +30,7 @@ public class AutoShow {
             return;
         }
 
+
         switch (option) {
             case (1):
                 for (Car c : carList) {
@@ -104,5 +105,4 @@ public class AutoShow {
 
     private static void While(boolean b) {
     }
-
 }

@@ -16,6 +16,5 @@ import java.util.ArrayList;
         cashbox.calculatePrice(buyer);
 
         cashbox.deleteToQuery(buyer);
-
     }
 }
