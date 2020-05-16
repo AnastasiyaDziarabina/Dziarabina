@@ -3,7 +3,7 @@ package com.stormnet.homework.homework6.Task1;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PlantMap<S, S1> {
+public class T1_PlantMap<S, S1> {
 
     private Map<String, String> Map = new HashMap<>();
 

@@ -7,7 +7,7 @@ public class Task1_Test {
 
     public static void main(String[] args) {
 
-        PlantMap plant = new PlantMap<>();
+        T1_PlantMap plant = new T1_PlantMap<>();
         Map<String, String> plants = new HashMap<>();
 
         plants.put("арбуз", "ягода");
@@ -17,5 +17,6 @@ public class Task1_Test {
 
         plant.getAllPlants(plants);
         plant.getPlant(plants,"овощ");
+
     }
 }

@@ -1,11 +1,11 @@
 package com.stormnet.homework.homework6.Task4;
 
-public class Car {
+public class T4_Car {
     private String brand;
     private String model;
     private int price;
 
-    public Car(String brand, String model, int price) {
+    public T4_Car(String brand, String model, int price) {
         this.brand = brand;
         this.model = model;
         this.price = price;
@@ -25,9 +25,8 @@ public class Car {
 
     @Override
     public String toString() {
-        return  "Брэнд: '" + brand + '\'' +
+        return  "Бренд: '" + brand + '\'' +
                 " Модель: '" + model + '\'' +
                 " Цена: '" + price;
-
     }
 }

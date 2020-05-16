@@ -5,13 +5,13 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Scanner;
 
-public class AutoShow {
+public class T4_AutoShow {
     public static void main(String [] args) {
-        List<Car> carList = new ArrayList<>();
+        List<T4_Car> carList = new ArrayList<>();
 
-        carList.add(new Car("BMW", "P 55", 10000));
-        carList.add(new Car("Toyota", "L 6G", 20000));
-        carList.add(new Car("Audi", "X-S31", 30000));
+        carList.add(new T4_Car("BMW", "P 55", 10000));
+        carList.add(new T4_Car("Toyota", "L 6G", 20000));
+        carList.add(new T4_Car("Audi", "X-S31", 30000));
 
         Scanner scanner = new Scanner(System.in);
         While (true);
@@ -26,14 +26,12 @@ public class AutoShow {
         try {
             option = scanner.nextInt();
         } catch (Exception e) {
-            System.err.println("пция отсутствует.");
+            System.err.println("Опция отсутствует.");
             return;
         }
-
-
         switch (option) {
             case (1):
-                for (Car c : carList) {
+                for (T4_Car c : carList) {
                     System.out.println(c.toString() + "\n");
                 }
                 break;
@@ -45,7 +43,7 @@ public class AutoShow {
                 System.out.println("Введите цену автомобиля: ");
                 int price = scanner.nextInt();
 
-                Car newCar = new Car(brand, model, price);
+                T4_Car newCar = new T4_Car(brand, model, price);
                 carList.add(newCar);
 
                 System.out.printf("Автомобиль бренда %s модели %s стимстью %d добавлен!\n\n",
@@ -58,7 +56,7 @@ public class AutoShow {
 
                 boolean itsDream = false;
 
-                for (Car c : carList) {
+                for (T4_Car c : carList) {
                     if (c.getBrand().equalsIgnoreCase(maker)) {
                         System.out.println(c.toString() + "\n");
                         itsDream = true;
@@ -76,10 +74,10 @@ public class AutoShow {
                 String make = scanner.next();
 
                 boolean itsMine = false;
-                ListIterator<Car> iter = carList.listIterator();
+                ListIterator<T4_Car> iter = carList.listIterator();
 
                 while (iter.hasNext()) {
-                    Car c = iter.next();
+                    T4_Car c = iter.next();
 
                     if (c.getBrand().equalsIgnoreCase(make)) {
                         System.out.printf("Вы приобрели автомобиль \n\n",

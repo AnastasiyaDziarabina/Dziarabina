@@ -13,14 +13,14 @@ public class Cashbox {
     }
 
     void calculatePrice(Buyer buyer) {
-        ArrayList<Product> shoppingList;
+        ArrayList<T2_Product> shoppingList;
         buyer = turnCashbox.peek();
 
         double sum = 0;
 
         shoppingList = buyer.getShoppingList();
 
-        for (Product product : shoppingList) {
+        for (T2_Product product : shoppingList) {
 
             sum += product.getPrice();
         }

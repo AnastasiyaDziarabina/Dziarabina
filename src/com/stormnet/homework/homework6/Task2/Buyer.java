@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class Buyer {
 
-    private ArrayList<Product> shoppingList = new ArrayList<>();
+    private ArrayList<T2_Product> shoppingList = new ArrayList<>();
 
-    public ArrayList<Product> getShoppingList() {
+    public ArrayList<T2_Product> getShoppingList() {
         return shoppingList;
     }
 
-    public Buyer(ArrayList<Product> shoppingList) {
+    public Buyer(ArrayList<T2_Product> shoppingList) {
         this.shoppingList = shoppingList;
     }
     public Buyer() {

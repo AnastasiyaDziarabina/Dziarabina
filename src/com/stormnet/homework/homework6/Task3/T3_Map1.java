@@ -2,7 +2,7 @@ package com.stormnet.homework.homework6.Task3;
 
 import java.util.*;
 
-public class Map1 {
+public class T3_Map1 {
     private Map<Integer, String> map = new HashMap<>();
 
     private void addToMap() {
