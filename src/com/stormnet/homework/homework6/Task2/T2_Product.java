@@ -9,7 +9,6 @@ public class T2_Product {
         this.typeOfProduct = typeOfProduct;
         this.price = price;
     }
-
     public double getPrice() {
         return price;
     }

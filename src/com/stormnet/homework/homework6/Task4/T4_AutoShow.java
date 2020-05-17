@@ -6,7 +6,7 @@ import java.util.ListIterator;
 import java.util.Scanner;
 
 public class T4_AutoShow {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         List<T4_Car> carList = new ArrayList<>();
 
         carList.add(new T4_Car("BMW", "P 55", 10000));
@@ -14,7 +14,7 @@ public class T4_AutoShow {
         carList.add(new T4_Car("Audi", "X-S31", 30000));
 
         Scanner scanner = new Scanner(System.in);
-        While (true);
+
         System.out.println("Вас интерусует:\n" +
                 "1. Информация о всех доступных машинах\n" +
                 "2. Добавить машину в список покупок\n" +
@@ -81,7 +81,7 @@ public class T4_AutoShow {
 
                     if (c.getBrand().equalsIgnoreCase(make)) {
                         System.out.printf("Вы приобрели автомобиль \n\n",
-                        c.getBrand(), c.getModel(), c.getPrice());
+                                c.getBrand(), c.getModel(), c.getPrice());
                         itsMine = true;
 
                         iter.remove();
@@ -93,14 +93,11 @@ public class T4_AutoShow {
                 }
 
                 break;
-            case(5):
+            case (5):
                 System.out.println("Всего доброго!\n");
                 return;
             default:
                 System.out.println("Попробуйте еще раз");
         }
-    }
-
-    private static void While(boolean b) {
     }
 }

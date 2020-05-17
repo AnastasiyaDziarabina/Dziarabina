@@ -2,7 +2,7 @@ package com.stormnet.homework.homework6.Task2;
 
 import java.util.ArrayList;
 
-public class Buyer {
+public class Buyer implements Comparable<Buyer>{
 
     private ArrayList<T2_Product> shoppingList = new ArrayList<>();
 
@@ -15,5 +15,10 @@ public class Buyer {
     }
     public Buyer() {
         this.shoppingList = shoppingList;
+    }
+
+    @Override
+    public int compareTo(Buyer buyer) {
+        return 0;
     }
 }
