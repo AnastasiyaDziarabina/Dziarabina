@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital>
+        <employees>
+                <employee name="Ivan" surname="Ivanov" position="Doctor" department="Surgery" experience="15 years"/>
+                <employee name="Sergei" surname="Krasnov" position="Doctor" department="Cardiology" experience="7 years"/>
+                <employee name="Anna" surname="Petrova" position="Nurse" department="Cardiology" experience="5 years"/>
+				<employee name="Veronica" surname="Andreeva" position="Nurse" department="Surgery" experience="2 years"/>
+        </employees>
+</hospital>
